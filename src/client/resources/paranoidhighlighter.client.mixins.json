@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.paranoidhighlighter.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"MinecraftMixin",
+		"EntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

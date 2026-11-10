@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "paranoidhighlighter",
+	"version": "${version}",
+	"name": "Paranoid Highlighter",
+	"description": "Client-side outlines for tracked items: drops, frames, displays, armor, mobs, vehicles and containers.",
+	"authors": [
+		"Boris"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.paranoidhighlighter.client.ParanoidHighlighterClient"
+		],
+		"modmenu": [
+			"com.paranoidhighlighter.config.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		{
+			"config": "paranoidhighlighter.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
